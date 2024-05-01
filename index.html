@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="menu-container welcome-menu">
+            <p class="title">
+                Tic Tac Toe
+            </p>
+            <button class="start-btn">Start game</button>
+        </div>
+        <div class="game-container">
+            <h1>Let's play TicTacToe</h1>
+            <div class="upperlinks">
+                <p class="htp-btn">How to play?</p>
+                <div class="bot">
+                    <span class="raceto">Race to:</span>
+                    <input type="number" id="raceto" class="raceto-input" placeholder="0">
+                    <button class="raceto-btn">Save</button>
+                </div>
+
+            </div>
+
+            <div class="scores-container">
+                <p class="scores-text">Scores:</p>
+                <div class="scores">
+                    <p>Player 1 : <span id="scoreP1">0</span> </p>
+                    <p>Player 2 : <span id="scoreP2">0</span></p>
+                </div>
+
+            </div>
+
+            <div class="box-container">
+                <div class="box">
+                    <img class="box-pick">
+                </div>
+                <div class="box">
+                    <img class="box-pick">
+                </div>
+                <div class="box">
+                    <img class="box-pick">
+                </div>
+                <div class="box">
+                    <img class="box-pick">
+                </div>
+                <div class="box">
+                    <img class="box-pick">
+                </div>
+                <div class="box">
+                    <img class="box-pick">
+                </div>
+                <div class="box">
+                    <img class="box-pick">
+                </div>
+                <div class="box">
+                    <img class="box-pick">
+                </div>
+                <div class="box">
+                    <img class="box-pick">
+                </div>
+            </div>
+
+            <!-- alerts -->
+            <div class="rules">
+                Rules for Tic-Tac-Toe
+                <ol>
+                    <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+                    <li>You are X , your friend is O . Players take turns putting their marks in</li>
+                    empty squares.
+                    <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the
+                        winner.</li>
+                    <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends
+                        in a
+                        tie.
+                    </li>
+
+                </ol>
+                <div class="close-btn">
+                    X
+                </div>
+
+            </div>
+            <div class="raceto-saved-alert">
+                <p>Game start now! You will play for RACE to <span class="raceto-num">0</span> !</p>
+            </div>
+            <div class="occupied">
+                Box occupied! Please choose other box!
+            </div>
+            <div class="player-won">
+                Player <span class="winner">0</span> won and got 1 point!
+            </div>
+            <div class="nomore-box">No more box available!</div>
+            <div class="final-winner-alert">
+                <img src="congrats.png" alt="congrats"> You win the game <p>PLAYER <span class="player-winner">0</span>
+                    !</p>
+                <button class="play-again-btn">Play again</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
